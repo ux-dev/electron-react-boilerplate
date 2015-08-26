@@ -10,8 +10,7 @@ export default class AboutPageContainer extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>About Page</h2>
+      <div className="page-container">
         <p>About us.</p>
         <Link to="home">back Home</Link>
       </div>

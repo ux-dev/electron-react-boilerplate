@@ -15,7 +15,7 @@ app.on('window-all-closed', function() {
 
 app.on('ready', function() {
 
-  mainWindow = new BrowserWindow({ width: 1024, height: 728 })
+  mainWindow = new BrowserWindow({ fullscreen: true })
 
   if (process.env.HOT) {
     mainWindow.loadUrl('file://' + __dirname + '/app/hot-dev-app.html')
@@ -33,7 +33,7 @@ app.on('ready', function() {
 
   if (process.platform === 'darwin') {
     template = [{
-      label: 'Electron',
+      label: 'Electron React',
       submenu: [{
         label: 'About ElectronReact',
         selector: 'orderFrontStandardAboutPanel:'

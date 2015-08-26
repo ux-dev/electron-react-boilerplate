@@ -1,16 +1,19 @@
 import React from 'react'
-import { RouteHandler } from 'react-router'
+import { RouteHandler, Link } from 'react-router'
 
 
 export default class AppContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="appContainer">
+      <i className='fa fa-hand-peace-o'></i><i className='fa fa-hand-peace-o'></i><i className='fa fa-hand-peace-o'></i>
         <RouteHandler />
+        <footer>
+          <i className='fa fa-hand-peace-o'></i>
+        </footer>
       </div>
     )
   }
 
 }
-
